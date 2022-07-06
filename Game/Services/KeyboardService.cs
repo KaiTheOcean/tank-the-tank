@@ -35,7 +35,7 @@ namespace Tank.Game.Services
         /// <summary>
         /// Checks if the given key is currently down.
         /// </summary>
-        /// <param name="key">The given key (w, a, s, d, i, j, k, or l)</param>
+        /// <param name="key">The given key (w, a, s, d, i, j, k, l, r, or p)</param>
         /// <returns>True if the given key is down; false if otherwise.</returns>
         public bool IsKeyDown(string key)
         {
@@ -46,7 +46,7 @@ namespace Tank.Game.Services
         /// <summary>
         /// Checks if the given key is currently up.
         /// </summary>
-        /// <param name="key">The given key (w, a, s, d, i, j, k, or l)</param>
+        /// <param name="key">The given key (w, a, s, d, i, j, k, l, r, or p)</param>
         /// <returns>True if the given key is up; false if otherwise.</returns>
         public bool IsKeyUp(string key)
         {

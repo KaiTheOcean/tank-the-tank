@@ -1,5 +1,5 @@
-using Unit06.Game.Casting;
-namespace Unit06.Game.Scripting
+using Tank.Game.Casting;
+namespace Tank.Game.Scripting
 {
     public class MoveBallAction : Action
     {

@@ -1,16 +1,16 @@
 using Tank.Game.Casting;
 namespace Tank.Game.Scripting
 {
-    public class MoveBallAction : Action
+    public class MoveBulletlAction : Action
     {
-        public MoveBallAction()
+        public MoveBulletAction()
         {
         }
 
         public void Execute(Cast cast, Script script, ActionCallback callback)
         {
-            Ball ball = (Ball)cast.GetFirstActor(Constants.BALL_GROUP);
-            Body body = ball.GetBody();
+            Bullet Bullet = (Bullet)cast.GetFirstActor(Constants.Bullet_GROUP);
+            Body body = bullet.GetBody();
             Point position = body.GetPosition();
             Point velocity = body.GetVelocity();
             position = position.Add(velocity);

@@ -1,24 +1,24 @@
-using Unit06.Game.Casting;
-using Unit06.Game.Services;
+using Tank.Game.Casting;
+using Tank.Game.Services;
 
 
-namespace Unit06.Game.Scripting
+namespace Tank.Game.Scripting
 {
-    public class DrawBallAction : Action
+    public class DrawBulletAction : Action
     {
         private VideoService videoService;
         
-        public DrawBallAction(VideoService videoService)
+        public DrawBulletAction(VideoService videoService)
         {
             this.videoService = videoService;
         }
 
         public void Execute(Cast cast, Script script, ActionCallback callback)
         {
-            Ball ball = (Ball)cast.GetFirstActor(Constants.BALL_GROUP);
+            Bullet bullet = (Bullet)cast.GetFirstActor(Constants.BULLET_GROUP);
             Body body = ball.GetBody();
 
-            if (ball.IsDebug())
+            if (bullet.IsDebug())
             {
                 Rectangle rectangle = body.GetRectangle();
                 Point size = rectangle.GetSize();
